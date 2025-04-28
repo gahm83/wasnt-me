@@ -28,15 +28,16 @@ body {
 
 .swiper {
   @apply !overflow-visible;
-  .swiper-wrapper {
-    @apply pb-14;
+  &.swiper-gallery {
+    @apply mb-12;
+
   }
   .swiper-scrollbar,
   .swiper-scrollbar-drag {
     @apply relative rounded-full w-full h-8 before:block before:w-full before:h-2 before:absolute before:top-1/2 before:-translate-y-1/2 before:left-0 before:rounded-full;
   }
   .swiper-scrollbar {
-    @apply before:bg-[#EEEEEE];
+    @apply absolute top-full w-full bottom-0 left-0 before:bg-[#EEEEEE];
 
   }
   .swiper-scrollbar-drag {

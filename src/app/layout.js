@@ -5,6 +5,7 @@ import "./globals.css";
 import brandLogo from "../../public/ares.svg";
 import iconLang from "../../public/language.svg";
 import iconDropdown from "../../public/dropdown.svg";
+import Header from "./components/molecules/header";
 
 const Gilmer = localFont({
   src: [
@@ -37,29 +38,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="en">
       <body className={`${Gilmer.variable} antialiased`}>
-        <header className="flex items-center justify-between absolute top-8 left-1/2 -translate-x-1/2 bg-white/10 backdrop-blur-sm w-full max-w-[1150px] h-[70px] rounded-full overflow-hidden px-4 font-bold">
-          <Image src={brandLogo} alt="Ares" />
-          <nav className="flex items-center space-x-6 [&_a]:flex [&_a]:items-center [&_a]:text-white">
-            <a href="">
-              <span>Proyectos</span>
-              <Image src={iconDropdown} alt="Dropdown Icon" />
-            </a>
-            <a href="">El estudio</a>
-            <a href="">
-              <span>Cultura Ares</span>
-              <Image src={iconDropdown} alt="Dropdown Icon" />
-            </a>
-            <a href="">Blog</a>
-          </nav>
-          <nav className="flex items-center space-x-6 [&_a]:flex [&_a]:items-center">
-            <a href="" className="flex items-center text-white">
-              <Image src={iconLang} alt="Language Icon" />
-              <span className="block ml-2">ES</span>
-              <Image src={iconDropdown} alt="Dropdown Icon" />
-            </a>
-            <a href="" className="bg-white text-black px-6 py-3 rounded-full">Hablemos</a>
-          </nav>
-        </header>
+        <Header />
         {children}
         <footer className="bg-black py-12 rounded-t-lg text-white">
           <div className="w-full max-w-[1150px] mx-auto space-y-12">

@@ -1,11 +1,11 @@
 import Image from "next/image";
 import ProjectSlideshow from "./components/projectSlideshow";
-import imageServicios from "../../public/image-servicios.jpg";
 import TagMarquee from "./components/tagMarquee";
 import HeroHome from "./components/homeHero";
 import StatsAndHeadquarters from "./components/statsHeadquarters";
 import PrimaryButton from "./components/atoms/button";
 
+import imageServicios from "../../public/image-servicios.jpg";
 
 export default function Home() {
   return (
@@ -37,7 +37,7 @@ export default function Home() {
         </div>
       </section>
       <TagMarquee />
-      <ProjectSlideshow />
+      <ProjectSlideshow tagList={true} />
       <section>
         <div className="w-full max-w-[1150px] mx-auto py-20 flex items-center justify-center">
           <div className="flex flex-col items-center justify-center space-y-16">
