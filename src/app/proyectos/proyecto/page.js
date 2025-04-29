@@ -1,5 +1,6 @@
 'use client'
-import ProjectSlideshow from "../../components/projectSlideshow";
+
+import Image from "next/image";
 import FooterHero from "../../components/molecules/footer-hero";
 import TagList from "../../components/molecules/tag-list";
 import IconSearch from "../../components/atoms/icons/icon-search";
@@ -8,6 +9,10 @@ import IconSort from "@/app/components/atoms/icons/icon-sort";
 import Card from "@/app/components/molecules/card";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Scrollbar } from 'swiper/modules';
+
+import imageSketch from '../../../../public/proyecto-dibujo.jpg';
+import RelatedProjectSlideshow from "@/app/components/relatedProjectsSllideshow";
+
 
 export default function Proyecto () {
   return (
@@ -32,10 +37,9 @@ export default function Proyecto () {
         </div>
       </section>
       <section>
-        <div className="bg-slate-600 aspect-[1.48/1] max-h-[768px] rounded-t-xl w-full">
-        </div>
-        <div className="bg-white -mt-3 rounded-t-xl overflow-hidden">
-          <div className="w-full max-w-[1150px] mx-auto py-20">
+        <div className="bg-slate-600 aspect-[1.48/1] max-h-[768px] rounded-t-xl w-full relative before:absolute before:bottom-0 before:block before:content-[''] before:w-full before:h-3 before:bg-white before:rounded-t-lg"></div>
+        <div className="bg-white overflow-hidden">
+          <div className="w-full max-w-[1150px] mx-auto pt-20 pb-28">
             <div className="grid grid-cols-2">
               <div className="space-y-4">
                 <h2 className="text-xl text-[#A1A1A1] font-bold">Concepto</h2> 
@@ -84,13 +88,14 @@ export default function Proyecto () {
         </div>
       </section>
       <section>
-        <div className="bg-slate-600 aspect-[1.48/1] max-h-[768px] rounded-t-xl w-full">
-        </div>
-        <div className="bg-white -mt-3 rounded-t-xl overflow-hidden">
+        <div className="bg-slate-600 aspect-[1.48/1] max-h-[768px] rounded-t-xl w-full relative before:absolute before:bottom-0 before:block before:content-[''] before:w-full before:h-3 before:bg-white before:rounded-t-lg"></div>
+        <div className="bg-white overflow-hidden">
           <div className="w-full max-w-[1150px] mx-auto">
-            <div className="grid grid-cols-12 pt-20 pb-12">
-              <div className="col-span-5"></div>
-              <div className="col-span-7 text-lg">
+            <div className="grid grid-cols-2 items-center pt-20 pb-12">
+              <div>
+                <Image src={imageSketch} alt="Picture of the author" />
+              </div>
+              <div className="text-lg">
                 <p>El proyecto se compone por un cuerpo de 2 niveles de área comercial, 4 niveles de estacionamiento, que incluyen 3 torres de vivienda de 18 niveles cada una y alrededor de 60 departamentos por torre, una torre de oficinas de 10 niveles y 2 hoteles business class. En general el centro comercial se levantó en diferentes plataformas que se adaptan a la morfología del terreno, además cuenta con pasillos, circulaciones verticales y elevadores que se comunican entre sí para poder hacer el traslado rápido y fácil entre los diferentes estacionamientos y las plantas del área comercial.</p>
               </div>
             </div>
@@ -98,9 +103,39 @@ export default function Proyecto () {
         </div>
       </section>
       <section>
-        <div className="bg-slate-600 aspect-[1.48/1] max-h-[768px] rounded-t-xl w-full">
+        <div className="space-y-12">
+          <div className="bg-slate-600 aspect-[1.48/1] max-h-[768px] rounded-t-xl w-full relative before:absolute before:bottom-0 before:block before:content-[''] before:w-full before:h-3 before:bg-white before:rounded-t-lg"></div>
+          <div className="bg-slate-600 aspect-[1.48/1] max-h-[768px] rounded-t-xl w-full relative before:absolute before:bottom-0 before:block before:content-[''] before:w-full before:h-3 before:bg-white before:rounded-t-lg"></div>
+          <div className="bg-slate-600 aspect-[1.48/1] max-h-[768px] rounded-t-xl w-full relative before:absolute before:bottom-0 before:block before:content-[''] before:w-full before:h-3 before:bg-white before:rounded-t-lg"></div>
+          <div className="bg-slate-600 aspect-[1.48/1] max-h-[768px] rounded-t-xl w-full relative before:absolute before:bottom-0 before:block before:content-[''] before:w-full before:h-3 before:bg-white before:rounded-t-lg"></div>
         </div>
       </section>
+      <section>
+        <div className="bg-white">
+          <div className="w-full max-w-[1150px] mx-auto py-20">
+            <div className="grid grid-cols-4 text-lg">
+              <div className="space-y-4">
+                <h2 className="text-xl text-[#A1A1A1] font-bold">Líderes</h2>
+                <ul>
+                  <li>Jacinto Arenas</li>
+                  <li>Zyanya Quero</li>
+                </ul>
+              </div>
+              <div className="space-y-4">
+                <h2 className="text-xl text-[#A1A1A1] font-bold">Equipo</h2> 
+                <ul>
+                  <li>Marlene García</li>
+                  <li>Belén Coronado</li>
+                  <li>Lourdes Barba</li>
+                  <li>Ulises Rivera</li>
+                  <li>Fernando Ayala</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <RelatedProjectSlideshow />
     </main>
   );
 }

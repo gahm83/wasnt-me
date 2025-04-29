@@ -1,8 +1,9 @@
 import PrimaryButton from "../atoms/button";
 
-export default function Card() {
+export default function Card({ schema = "normal"}) {
+  const lightForeground = schema == "light";
   return (
-    <div className="bg-[#F8F8F8] rounded-xl">
+    <div className={`${lightForeground ? 'bg-white' : 'bg-[#F8F8F8]'} rounded-xl`}>
       <figure className="aspect-video bg-black w-full rounded-xl">
       </figure>
       <div className="flex flex-col gap-8 p-6">
