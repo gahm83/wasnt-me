@@ -1,5 +1,5 @@
 import ProjectSlideshow from "../../components/projectSlideshow";
-import FooterHero from "../../components/molecules/footer-hero";
+import FooterHero from "../../components/molecules/hero-footer";
 import TagList from "../../components/molecules/tag-list";
 import IconSearch from "../../components/atoms/icons/icon-search";
 import IconSort from "@/app/components/atoms/icons/icon-sort";
@@ -20,14 +20,14 @@ export default function Home() {
               </nav>
               <h2 className="text-5xl text-[#636B69] font-bold">Usos Mixtos</h2>
             </div>
-            <div className="col-span-7 text-lg">
+            <div className="col-span-7">
               <p>La integración física y funcional de espacios residenciales, comerciales, culturales y de transporte, diseñados para crear entornos equilibrados y dinámicos que fomentan la convivencia, la movilidad eficiente y el desarrollo sotenible.</p>
             </div>
           </div>
         </div>
       </section>
       <section>
-        <div className="bg-slate-500 aspect-[1.48/1] max-h-[768px] rounded-t-xl w-full">
+        <div className="bg-stone-600 aspect-[1.48/1] max-h-[768px] rounded-t-xl w-full">
         </div>
         <div className="bg-white -mt-3 rounded-t-xl">
           <div className="w-full max-w-[1150px] mx-auto">

@@ -1,7 +1,7 @@
 import Image from "next/image";
 import SectionTitle from "../components/atoms/sectionTitle";
 import ProjectSlideshow from "../components/projectSlideshow";
-import FooterHero from "../components/molecules/footer-hero";
+import FooterHero from "../components/molecules/hero-footer";
 import TagList from "../components/molecules/tag-list";
 import IconSearch from "../components/atoms/icons/icon-search";
 

@@ -18,6 +18,7 @@ body {
   color: var(--foreground);
   background: var(--background);
   font-family: var(--font-gilmer);
+  font-size: 18px;
 }
 
 @layer utilities {
@@ -31,7 +32,18 @@ body {
   &.swiper-gallery {
     .swiper-scrollbar {
       @apply left-0 mt-4;
-
+    }
+  }
+  &.swiper-timeline {
+    @apply !flex flex-col-reverse items-stretch;
+    .swiper-pagination {
+      @apply flex items-center space-x-4 mb-12;
+      span {
+        @apply block bg-[#EFEFEF] rounded-full font-bold text-sm py-[6px] px-4 cursor-pointer;
+        &.swiper-pagination-bullet-active {
+          @apply bg-[#407978] text-white cursor-default;
+        }
+      }
     }
   }
   .swiper-scrollbar,
