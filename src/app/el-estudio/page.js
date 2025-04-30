@@ -9,8 +9,9 @@ import imageSede from "../../../public/sede-guadalajara.jpg";
 import HeroHome from "../components/homeHero";
 import IconChevronDown from "../components/atoms/icons/icon-chevron-down";
 import SlideshowTimeline from "../components/slideshow-timeline";
+import CardBio from "../components/molecules/card-bio";
 
-export default function Home() {
+export default function ElEstudio() {
   return (
     <main>
       <HeroHome />
@@ -95,16 +96,7 @@ export default function Home() {
               <h2 className="text-3xl text-[#636B69] font-bold mb-12">Directores</h2> 
               <div className="grid grid-cols-3 gap-x-6 gap-y-8">
               {
-                Array.from({ length: 6 }).map((_, index) => (
-                  <div>
-                    <figure className="bg-stone-600 aspect-[0.96/1] w-full m-0 p-0 rounded-xl"></figure>
-                    <div className="flex flex-col items-start py-3">
-                      <h2 className="text-xl font-bold">Alejandro Arenas</h2>
-                      <p className="pb-6">CEO</p>
-                      <a href="" className="flex items-center justify-center px-4 h-10 font-bold bg-[#636B69] text-white rounded-full text-sm">Ver biograía</a>
-                    </div>
-                  </div>
-                ))
+                Array.from({ length: 6 }).map((_, index) => <CardBio />)
               }
               </div>
             </div>
@@ -112,16 +104,7 @@ export default function Home() {
               <h2 className="text-3xl text-[#636B69] font-bold mb-12">Asociados</h2> 
               <div className="grid grid-cols-3 gap-x-6 gap-y-8">
               {
-                Array.from({ length: 8 }).map((_, index) => (
-                  <div>
-                    <figure className="bg-stone-600 aspect-[0.96/1] w-full m-0 p-0 rounded-xl"></figure>
-                    <div className="flex flex-col items-start py-3">
-                      <h2 className="text-xl font-bold">Alejandro Arenas</h2>
-                      <p className="pb-6">CEO</p>
-                      <a href="" className="flex items-center justify-center px-4 h-10 font-bold bg-[#636B69] text-white rounded-full text-sm">Ver biograía</a>
-                    </div>
-                  </div>
-                ))
+                Array.from({ length: 8 }).map((_, index) => <CardBio />)
               }
               </div>
             </div>
@@ -132,7 +115,7 @@ export default function Home() {
         <div className="w-full max-w-[1150px] mx-auto py-16 space-y-14">
           <nav className="flex items-center justify-between">
             <a href="" className="flex items-center space-x-4 font-bold text-[#407978] text-xl">
-              <IconChevronDown className="[&_path]:fill-[#407978]" />
+              <IconChevronDown className="[&_path]:fill-[#0f2120]" />
               <span>Architects</span>
             </a>
             <a href="" className="flex items-center space-x-4 font-bold text-[#636B69] text-xl">
