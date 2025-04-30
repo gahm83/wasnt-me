@@ -1,12 +1,14 @@
 import Link from "next/link";
 
-export default function IconArrowRight({className}) {
+export default function IconArrowRight({className, isAlt = false}) {
 
   return (
     <span className="flex items-center justify-center w-4 h-4">
-      <svg width="12" height="8" viewBox="0 0 12 8" fill="none" xmlns="http://www.w3.org/2000/svg">
-        <path d="M7.33341 8L6.40008 7.03333L8.76675 4.66667H0.666748V3.33333H8.76675L6.40008 0.966667L7.33341 0L11.3334 4L7.33341 8Z" fill="#A1A1A1" />
-      </svg>
+      {
+        isAlt
+        ? <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><path fill="none" stroke="#A1A1A1" stroke-linecap="square" stroke-miterlimit="10" stroke-width="48" d="M244 400L100 256l144-144M120 256h292"/></svg>
+        : <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 512 512"><path fill="none" stroke="#A1A1A1" stroke-linecap="square" stroke-miterlimit="10" stroke-width="48" d="m268 112l144 144l-144 144m124-144H100"/></svg>
+      }
     </span>
   );
 }

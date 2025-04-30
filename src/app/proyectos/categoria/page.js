@@ -3,7 +3,7 @@ import FooterHero from "../../components/molecules/hero-footer";
 import TagList from "../../components/molecules/tag-list";
 import IconSearch from "../../components/atoms/icons/icon-search";
 import IconSort from "@/app/components/atoms/icons/icon-sort";
-import Card from "@/app/components/molecules/card";
+import Card from "@/app/components/molecules/card-project";
 import IconArrowRight from "@/app/components/atoms/icons/icon-arrow-right";
 
 export default function Home() {

@@ -86,26 +86,6 @@ export default function Home() {
       </section>
       <SlideshowTimeline />
       <section>
-        <div className="w-full max-w-[1150px] mx-auto py-16 space-y-12">
-          <h1 className="text-5xl font-bold">Ares, <br />a través del tiempo</h1>
-          <nav className="flex space-x-4 [&>a]:block [&>a]:bg-[#EFEFEF] [&>a]:rounded-full [&>a]:font-bold [&>a]:text-sm [&>a]:py-[6px] [&>a]:px-4">
-            <a href="">1974</a>
-            <a href="">1980</a>
-            <a href="">1997</a>
-            <a href="">2002</a>
-            <a href="">2003</a>
-            <a href="">2011</a>
-            <a href="">2012</a>
-            <a href="">2013</a>
-            <a href="">2016</a>
-            <a href="">2018</a>
-            <a href="">2009</a>
-            <a href="">2023</a>
-            <a href="">2024</a>
-          </nav>
-        </div>
-      </section>
-      <section>
         <div className="w-full max-w-[1150px] mx-auto py-16">
           <div className="w-1/2 mb-16">
             <h1 className="text-5xl">Somos creativos que juntos diseñan procesos que impulsan resultados</h1>

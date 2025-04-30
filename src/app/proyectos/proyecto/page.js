@@ -6,7 +6,7 @@ import TagList from "../../components/molecules/tag-list";
 import IconSearch from "../../components/atoms/icons/icon-search";
 import IconArrowRight from "@/app/components/atoms/icons/icon-arrow-right";
 import IconSort from "@/app/components/atoms/icons/icon-sort";
-import Card from "@/app/components/molecules/card";
+import Card from "@/app/components/molecules/card-project";
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Scrollbar } from 'swiper/modules';
 

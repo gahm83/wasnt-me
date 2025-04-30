@@ -9,7 +9,7 @@ import 'swiper/css';
 
 import PrimaryButton from './atoms/button';
 import SectionTitle from './atoms/sectionTitle';
-import Card from './molecules/card';
+import Card from './molecules/card-project';
 import TagList from './molecules/tag-list';
 
 export default function ProjectSlideshow({
