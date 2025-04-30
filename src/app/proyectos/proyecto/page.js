@@ -116,14 +116,14 @@ export default function Proyecto () {
             <div className="grid grid-cols-4">
               <div className="space-y-4">
                 <h2 className="text-xl text-[#A1A1A1] font-bold">Líderes</h2>
-                <ul>
+                <ul className='space-y-1'>
                   <li>Jacinto Arenas</li>
                   <li>Zyanya Quero</li>
                 </ul>
               </div>
               <div className="space-y-4">
                 <h2 className="text-xl text-[#A1A1A1] font-bold">Equipo</h2> 
-                <ul>
+                <ul className='space-y-1'>
                   <li>Marlene García</li>
                   <li>Belén Coronado</li>
                   <li>Lourdes Barba</li>

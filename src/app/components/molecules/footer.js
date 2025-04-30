@@ -5,7 +5,7 @@ export default function Footer() {
   const pathname = usePathname();
 
   return (
-    <footer className="bg-black py-12 rounded-t-lg text-white">
+    <footer className="bg-black py-12 rounded-t-xl text-white">
       <div className="w-full max-w-[1150px] mx-auto space-y-12">
         <div className="grid grid-cols-4 gap-12">
           <div>
