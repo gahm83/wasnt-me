@@ -2,7 +2,7 @@ import IconExpand from "../atoms/icons/icon-expand";
 
 export default function CardInitiative() {
   return (
-    <article className="bg-[#F8F8F8] rounded-xl">
+    <article className="space-y-3 bg-[#F8F8F8] rounded-xl">
       <figure className="m-0 p-0 rounded-xl h-[440px] bg-stone-600"></figure>
       <div className="flex items-center justify-between p-4">
         <div className="space-y-3">
